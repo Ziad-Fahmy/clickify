@@ -1,7 +1,8 @@
 import { useEffect, useState } from 'react';
 import { ChevronDown } from 'lucide-react';
-
-const logoUrl = 'https://d2xsxph8kpxj0f.cloudfront.net/310419663029429997/cGLXMiQ6AvZBgN8HMBSubT/brand-logo-2VStEtBsMFFfeLcoathA88.webp';
+import logo from "../assets/Logo.png"
+// const logoUrl = 'https://d2xsxph8kpxj0f.cloudfront.net/310419663029429997/cGLXMiQ6AvZBgN8HMBSubT/brand-logo-2VStEtBsMFFfeLcoathA88.webp';
+const logoUrl = logo;
 
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -24,23 +25,22 @@ export default function Navbar() {
 
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled
           ? 'bg-white/95 backdrop-blur-md shadow-md'
           : 'bg-transparent'
-      }`}
+        }`}
     >
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <div className="flex items-center gap-2 cursor-pointer" onClick={() => scrollToSection('hero')}>
+          <div className="flex items-center  cursor-pointer" onClick={() => scrollToSection('hero')}>
             <img
               src={logoUrl}
-              alt="Unknown Developer"
-              className="w-8 h-8"
+              alt="Clickify"
+              className="w-28 h-28"
             />
             <span className="hidden sm:inline font-bold text-lg text-navy-dark" style={{ color: '#232347' }}>
-              Unknown Dev
+              {/* Clickify */}
             </span>
           </div>
 
