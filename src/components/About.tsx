@@ -118,6 +118,7 @@ export default function About() {
                   e.currentTarget.style.color = '#FFFFFF';
                 }}
               >
+                
                 <Download className="w-5 h-5" />
                 View Resume
               </motion.button>
