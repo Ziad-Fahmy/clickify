@@ -23,7 +23,7 @@ export default function Contact() {
   };
 
   return (
-    <section id="contact" className="relative py-20 md:py-32 overflow-hidden">
+    <section id="contact" >
       {/* Diagonal Divider Top */}
       <div className="absolute top-0 left-0 right-0 h-32 -mt-1" style={{ backgroundColor: '#14D8C4' }}>
         <svg

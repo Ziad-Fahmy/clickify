@@ -25,9 +25,9 @@ export default function About() {
   };
 
   return (
-    <section id="about" className="relative py-20 md:py-32 overflow-hidden">
+    <section id="about" className="">
       {/* Diagonal Divider Top */}
-      <div className="absolute top-0 left-0 right-0 h-32 -mt-1" style={{ backgroundColor: '#14D8C4' }}>
+      {/* <div className="absolute top-0 left-0 right-0 h-32 -mt-1" style={{ backgroundColor: '#14D8C4' }}>
         <svg
           className="absolute bottom-0 left-0 w-full h-32"
           viewBox="0 0 1200 120"
@@ -36,7 +36,7 @@ export default function About() {
         >
           <path d="M0,50 Q300,100 600,50 T1200,50 L1200,120 L0,120 Z" />
         </svg>
-      </div>
+      </div> */}
 
       <div
         className="relative z-10 pt-20 md:pt-32"
